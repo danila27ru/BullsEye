@@ -81,7 +81,6 @@ struct ContentView: View {
             
             // Button row
             Button(action: {
-                print("Button pressed!")
                 self.alertIsVisible = true
             }) {
                 Text("Hit me")
@@ -90,10 +89,10 @@ struct ContentView: View {
                 return Alert(title: Text(alertTitle()),
                              message: Text(
                                 "The slider's value is \(sliderValueRounded()).\n" +
-                                "You scored \(awardPoints()) points this round."
-                    ), dismissButton: .default(Text("Click here")) {
-                        self.startNewRound()
-                        }
+                                "You scored \(awardPoints()) points this round."),
+                             dismissButton: .default(Text("Click here")) {
+                                self.startNewRound()
+                    }
                 )}
                 .background(Image("Button"))
                 .modifier(ButtonLargeTextStyle())
