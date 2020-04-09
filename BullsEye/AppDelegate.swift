@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  BallsEye
+//  BullsEye
 //
 //  Created by Danila Gorelko on 3.4.20.
 //  Copyright © 2020 Danila Gorelko. All rights reserved.
